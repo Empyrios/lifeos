@@ -1,0 +1,12 @@
+{
+  "name": "lifeos",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "check": "node --check site/app.mjs && node --check site/core.mjs && node --check site/sw.js",
+    "verify": "npm run check && npm test"
+  },
+  "engines": {"node": ">=20"}
+}
